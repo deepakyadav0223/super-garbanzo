@@ -9,7 +9,7 @@ from tkinter import messagebox
 #free openweatherApi and collect data
 def tellWeather():
 
-    api_key = "db66791161b11fee77a038c0032175d1"
+    api_key = "Enter Api key here"
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = city_field.get()
     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
