@@ -98,19 +98,19 @@ def sendEmail(to,content):
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour <12:
-        speak("Good Morning baby Did you eat breakfast")
-        print("Good Morning baby Did you eat breakfast")
+        speak("Good Morning  Did you eat breakfast")
+        print("Good Morning Did you eat breakfast")
 
     elif hour>=12 and hour < 18:
-        speak("Good Afternoon baby did you eat lunch")
-        print("Good Afternoon baby did you eat lunch")
+        speak("Good Afternoon  did you eat lunch")
+        print("Good Afternoon  did you eat lunch")
 
 
     else:
-        speak("Good evening baby please take dinner")
-        print("Good evening baby please take dinner")
+        speak("Good evening  please take dinner")
+        print("Good evening please take dinner")
 
-    assname = ("I am ayesha ,Deepak girlfriend")
+    assname = ("I am ayesha")
     speak(assname)
     print(assname)
     speak("what work do you want from me")
@@ -121,7 +121,7 @@ def usrname():
     print("what is your name")
     uname = takeCommand()
     if "deepak yadav" in uname:
-        speak("you are my boyfriend")
+        speak("you are Boss")
         print("Welcome Deepak Yadav")
     else:
         speak("Welcome Mister")
@@ -150,13 +150,13 @@ while True:
           print(results)
           speak(results)
         elif 'open youtube' in query:
-          speak("here you go to youtube baby")
+          speak("here you go to youtube")
           webbrowser.open_new_tab("www.youtube.com")
         elif 'open google' in query:
           speak("here you go to google baby")
           webbrowser.open_new_tab("www.google.com")
         elif 'play music' or 'music' in query:
-           speak("playing music baby")
+           speak("playing music ")
            music = "C:\\Users\\USER\\Music"
            songs = os.listdir(music)
            print(songs)
@@ -174,7 +174,7 @@ while True:
             speak("what should i say?")
             print("what should i say")
             content = takeCommand()
-            to = "samirtiwari2308@gmail.com"
+            to = "fgdgfri2hb8@gmail.com"
             sendEmail(to,content)
             speak("Email has been sent")
            except Exception as e:
@@ -183,13 +183,13 @@ while True:
         elif 'how are you' in query:
              speak("i am fine, Thank you!")
              print("i am fine thank you!")
-             speak("how are you baby?")
-             print("how are you baby?")
+             speak("how are you?")
+             print("how are you ?")
 
         elif 'fine ' in query or 'good ' in query:
-             speak("It is  good to know that you are fine baby uuuhhhh")
+             speak("It is  good to know that you are fine ")
         elif 'change name' in query:
-             speak("what would you like to call me,baby")
+             speak("what would you like to call me,sir")
              assname  = takeCommand()
              speak("thanks for giving me new name")
              print("thanks for giving me new name")
@@ -201,7 +201,7 @@ while True:
         elif 'calculate' in query:
              speak("running....")
              print("running....")
-             app_id = " RA7R6J-Y575PX8KV7"
+             app_id = " Enter your id"
              client  = wolframalpha.Client(app_id)
              indx = query.lower().split().index('calculate')
              query = query.split()[indx + 1:]
@@ -215,7 +215,7 @@ while True:
              webbrowser.open(query)
 
         elif "send whatsapp message" in query:
-             kit.sendwhatmsg("+919306008049", "i am  ayesha deepak's girlfriend", 11, 40)
+             kit.sendwhatmsg("+919306546469", "i am  ayesha ", 11, 40)
              print("messsgae sent succesfully")
 
 
@@ -243,7 +243,7 @@ while True:
             speak("what should i write")
             note = takeCommand()
             file= open('ayesha.txt','w')
-            speak("Baby,Should i include date and time")
+            speak("sir,Should i include date and time")
             snfm =  takeCommand()
             if 'yes' in snfm or 'sure'  in snfm:
              strTime = datetime.datetime.now().strftime("% H: % M: % S")
@@ -263,7 +263,7 @@ while True:
           os.startfile(npath)
         elif "handwritten" in query:
            speak("running")
-           kit.text_to_handwriting("hello i am ayesha ,deepak's girlfriend", rgb=[0, 0, 0])
+           kit.text_to_handwriting("hello i am ayesha", rgb=[0, 0, 0])
         elif "open command promot" in query:
             os.system("start cmd")
         elif "open camera" in query:
@@ -284,10 +284,11 @@ while True:
 
         elif "ayesha" in query:
            wishMe()
-           speak("I am ayesha Deepak's girlfriend")
-           print("I am ayesha Deepak's girlfriend")
+           speak("I am ayesha")
+           print("I am ayesha ")
         elif "weather" in query:
-           api_key = "db66791161b11fee77a038c0032175d1"
+            #enter your key
+           api_key = "dhjvfdfsxfcvbjytdsv2175d1"
            base_url = "https://api.openweathermap.org/data/2.5/weather?"
            speak("what is city name ?")
            print("city name : ")
@@ -307,14 +308,14 @@ while True:
               speak("City Not Found")
               print("City Not Found")
         elif "send a message " in query:
-            account_sid  = 'ACc5c41fab2e03ba29f36c6ab155adbe68'
-            auth_token = '0497669be6a5159c8c6bffca9e1efa03'
+            account_sid  = 'Enter your id'
+            auth_token = 'Enter your id'
             client = Client(account_sid,auth_token)
             message   = client.messages\
                           .create(
                               body= takeCommand(),
-                              from_= '9306008049',
-                              to = '9817551740',
+                              from_= '56448049',
+                              to = '9575548540',
                             )
             print(message.sid)
         elif"wikipedia" in query:
@@ -326,7 +327,7 @@ while True:
         elif  "what is" in query :
             speak("running ...")
             print("running...")
-            client = wolframalpha.Client("RA7R6J-Y575PX8KV7")
+            client = wolframalpha.Client("Enter your id")
             res = client.query(query)
             try:
                 print(next(res.results).text)
@@ -338,7 +339,7 @@ while True:
         elif "who is " in query:
           speak("running ...")
           print("running...")
-          client = wolframalpha.Client("RA7R6J-Y575PX8KV7")
+          client = wolframalpha.Client("Enter your id")
           res = client.query(query)
 
           try:
@@ -348,5 +349,6 @@ while True:
             print("No results")
             speak("no results")
 
-speak("do you have any other work baby")
-print("do you have other work baby")
+speak("do you have any other work ")
+
+print("do you have other work ")
