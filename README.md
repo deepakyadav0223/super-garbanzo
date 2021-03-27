@@ -1,4 +1,4 @@
 # super-garbanzo
-My_Virtual_Girlfriend
-This is my virtual girlfriend made using python
+My_Virtual_Assitant
+This is my virtual assitant made using python
 
