@@ -288,7 +288,7 @@ while True:
            print("I am ayesha ")
         elif "weather" in query:
             #enter your key
-           api_key = "dhjvfdfsxfcvbjytdsv2175d1"
+           api_key = "enter your key"
            base_url = "https://api.openweathermap.org/data/2.5/weather?"
            speak("what is city name ?")
            print("city name : ")
@@ -322,8 +322,8 @@ while True:
            speak("opening")
            webbrowser.open("www.wikipedia.com")
         elif  " will be my gf" in query:
-           speak("Sorry i only committed for deepak")
-           print("Sorry i only committed for deepak")
+           speak("no")
+           print("no")
         elif  "what is" in query :
             speak("running ...")
             print("running...")
